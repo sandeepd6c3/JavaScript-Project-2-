@@ -23,9 +23,9 @@ body {
 :root {
   --bg-color: #000000;
   --bg-button-color: #1a1a1a;
-  --bg-task-color:#2a2a2a;
+  --bg-task-color: #2a2a2a;
   --primary-text: #f4f4f4;
-  --delete-color:#ff4d4d;
+  --delete-color: #ff4d4d;
 
   /* Padding Variable  */
 
@@ -49,10 +49,10 @@ body {
   background-color: var(--bg-color);
   color: var(--primary-text);
 }
-main{
-height: 100%;
-display: flex;
-flex-direction: column;
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -74,46 +74,51 @@ flex-direction: column;
 
 /* Bord Section Styling */
 
-section{
-    padding: var(--section-padding);
-    display: flex;
-    justify-content: space-between;
-/* background-color: skyblue; */
-display: flex;
-flex-grow: 1;
-gap: var(--border-radius-xxl);
+section {
+  padding: var(--section-padding);
+  display: flex;
+  justify-content: space-between;
+  /* background-color: skyblue; */
+  display: flex;
+  flex-grow: 1;
+  gap: var(--border-radius-xxl);
 }
-section .task-column{
-    background-color:var(--bg-button-color); 
-    flex-grow: 1;
-    padding: var(--border-radius-m);
-display: flex;
-flex-direction: column;
-gap: var(--padding-m);
-border-radius: var(--padding-m);
+section .task-column {
+  background-color: var(--bg-button-color);
+  flex-grow: 1;
+  padding: var(--border-radius-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-m);
+  border-radius: var(--padding-m);
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-section .task-column .heading{
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 100%;
-
+section .task-column .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-section .task-column .task{
-background-color: var(--bg-task-color);
-padding: var(--padding-m);
-border-radius: var(--padding-m);
-display: flex;
-flex-direction: column;
-gap: var(--padding-s);
+section .task-column .task {
+  background-color: var(--bg-task-color);
+  padding: var(--padding-m);
+  border-radius: var(--padding-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-s);
+  cursor: grab;
 }
-section .task-column .task button{
-    align-self: flex-end;
-    padding: var(--padding-s) var(--padding-m);
-    cursor: pointer;
-    border-radius: var(--padding-s);
-    border: none;
-    outline: none;
-    background-color: var(--delete-color);
-    color: var(--primary-text);
+section .task-column .task button {
+  align-self: flex-end;
+  padding: var(--padding-s) var(--padding-m);
+  cursor: pointer;
+  border-radius: var(--padding-s);
+  border: none;
+  outline: none;
+  background-color: var(--delete-color);
+  color: var(--primary-text);
+}
+section .task-column.hover-over {
+  border: 2px dashed var(--primary-text);
+  scale: 1.05;
 }
