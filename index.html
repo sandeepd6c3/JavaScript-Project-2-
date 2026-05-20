@@ -9,29 +9,29 @@
   <body>
     <main>
       <nav>
-        <div class="left">Kanban</div>
+        <div class="left">Future Work Space</div>
         <div class="right"><button>Add New Task</button></div>
       </nav>
 
       <section class="board">
-        <div class="task-column">
+        <div id="Todo" class="task-column">
           <div class="heading">
             <div class="left">TO DO</div>
             <div class="right">COUNT</div>
           </div>
-          <div class="task">
+          <div class="task" draggable="true">
             <h2>Task 1</h2>
             <p>Task k baare me kuch likho</p>
             <button>Delete</button>
           </div>
         </div>
-        <div class="task-column">
+        <div id="Progress" class="task-column">
           <div class="heading">
             <div class="left">IN PROGRESS</div>
             <div class="right">COUNT</div>
           </div>
         </div>
-        <div class="task-column">
+        <div id="Done" class="task-column">
           <div class="heading">
             <div class="left">DONE</div>
             <div class="right">COUNT</div>
@@ -40,4 +40,5 @@
       </section>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
