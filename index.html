@@ -10,7 +10,7 @@
     <main>
       <nav>
         <div class="left">Future Work Space</div>
-        <div class="right"><button>Add New Task</button></div>
+        <div class="right"><button id="toggle-modal">Add New Task</button></div>
       </nav>
 
       <section class="board">
@@ -39,6 +39,18 @@
         </div>
       </section>
     </main>
+
+    <div class="modal addnewtask">
+      <div class="bg"></div>
+      <div class="center">
+        <input type="text" id="task-title-input" placeholder="Task Title " />
+        <textarea
+          placeholder="Task Description"
+          id="task-description-input"
+        ></textarea>
+        <button id="add-new-task" class="add-task">Add Task</button>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
