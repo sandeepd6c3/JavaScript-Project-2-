@@ -118,8 +118,13 @@ nav button:hover::before {
 nav button:hover {
   color: rgb(0, 0, 0);
 }
+nav .right button + button {
+  margin-left: 10px;
+}
+nav button.secondary {
+  background-color: rgb(120, 120, 120);
+}
  
-
 section {
   height: 100%;
   padding: var(--section-padding);
